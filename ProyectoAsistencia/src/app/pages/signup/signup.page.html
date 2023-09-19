@@ -1,0 +1,32 @@
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="title">Bienvenido</ion-title>
+    <p class="subTitle">Registrate para crear tu cuenta</p>
+  </div>
+
+  <form>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input placeholder="name" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="email" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="password" class="input"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+    </div>
+    <div class="signinlink">
+      <p>¿Ya eres miembro?<a [routerLink]="['/login']"> Ingresar</a></p>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end">
+      <ion-fab-button [routerLink]="['/home']">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </form>
+</ion-content>
